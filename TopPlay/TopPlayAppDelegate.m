@@ -7,11 +7,17 @@
 //
 
 #import "TopPlayAppDelegate.h"
+#import "TopPlayTableViewController.h"
 
 @implementation TopPlayAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+   /*TopPlayTableViewController *topPlayViewController = [[TopPlayTableViewController alloc] initWithNibName:@"TopPlayTableViewController" bundle:nil];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:topPlayViewController];
+    self.window.rootViewController = nav;*/
+    
     // Override point for customization after application launch.
     return YES;
 }
