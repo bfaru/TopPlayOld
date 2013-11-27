@@ -26,6 +26,8 @@
 #import "GTLYouTubeGuideCategoryListResponse.h"
 #import "GTLYouTubeGuideCategorySnippet.h"
 #import "GTLYouTubeGuideCategory.h"
+#import "UIViewController+ECSlidingViewController.h"
+
 
 
 
@@ -40,6 +42,8 @@
 //@property (nonatomic) NSArray *imageArray;
 //@property (nonatomic) NSMutableArray *titleArray;
 @property (nonatomic) NSString *videoTilte;
+
+
 @end
 
 @implementation TopPlayTableViewController {
@@ -158,11 +162,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   // [self.view addGestureRecognizer:self.slidingViewController.panGesture];
+    //[self.navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
     
-    self.title = @"Stats";
-    //Documets directory an file paths
+    //self.title = @"Stats";
+    
+    // configure top view controller
+        //Documets directory an file paths
     NSLog(@"Documents folder is : %@", [self documentsDirectory]);
     NSLog(@"Data file path is : %@", [self dataFilePath]);
+    self.slidingViewController.topViewAnchoredGesture = ECSlidingViewControllerAnchoredGestureTapping | ECSlidingViewControllerAnchoredGesturePanning;
+    self.slidingViewController.customAnchoredGestures = @[];
+    
+    [self.navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
     //[self fetchMyChannelList];
     
     
@@ -193,6 +205,7 @@
        //     NSLog(@"Error: %@", error.description);
 }//UCWV3obpZVGgJ3j9FVhEjF2Q
    // }];
+
 
 #pragma mark - Fetch Playlist
 - (void)fetchCategory {
@@ -606,5 +619,14 @@
 }
  
  */
+- (IBAction)menuButtonTapped:(id)sender {
+    [self.slidingViewController anchorTopViewToRightAnimated:YES];
+}
+
+- (IBAction)favoriteMenuButtonTapped:(id)sender {
+    [self.slidingViewController anchorTopViewToLeftAnimated:YES];
+}
+
+
 
 @end

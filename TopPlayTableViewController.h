@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECSlidingViewController.h"
 
-@interface TopPlayTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+
+@interface TopPlayTableViewController : UITableViewController
 //{
 //NSMutableArray *tableData;
 //}
+- (IBAction)menuButtonTapped :(id)sender;
+- (IBAction)favoriteMenuButtonTapped:(id)sender;
 
 @end

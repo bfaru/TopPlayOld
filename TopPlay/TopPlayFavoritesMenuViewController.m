@@ -1,20 +1,21 @@
 //
-//  TopPlayMenuViewController.m
+//  TopPlayFavoritesMenuViewController.m
 //  TopPlay
 //
-//  Created by Bryan Garces on 11/23/13.
+//  Created by Bryan Garces on 11/27/13.
 //  Copyright (c) 2013 Bryan Garces. All rights reserved.
 //
 
-#import "TopPlayMenuViewController.h"
+#import "TopPlayFavoritesMenuViewController.h"
 #import "ECSlidingSegue.h"
 
 
-@interface TopPlayMenuViewController ()
-@property (strong, nonatomic)NSArray* menu;
+@interface TopPlayFavoritesMenuViewController ()
+
 @end
 
-@implementation TopPlayMenuViewController
+@implementation TopPlayFavoritesMenuViewController
+
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.view endEditing:YES];
@@ -38,22 +39,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   // self.view.layer.borderWidth     = 20;
+   /// self.view.layer.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0].CGColor;
+   // self.view.layer.borderColor     = [UIColor colorWithWhite:0.8 alpha:1.0].CGColor;
+   // self.edgesForExtendedLayout     = UIRectEdgeTop | UIRectEdgeBottom | UIRectEdgeLeft; // don't go under the top view
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.menu = [NSArray arrayWithObjects:@"Main", nil];
-    //[self.slidingViewController setAnchorRightRevealAmount:200.0f];
-    //self.view.layer.borderWidth     = 20;
-   // self.edgesForExtendedLayout     = UIRectEdgeTop | UIRectEdgeBottom | UIRectEdgeLeft; // don't go under the top view
-    //self.slidingViewController.anchorLeftPeekAmount= ECFullWidth;
-    // configure under left view controller
-    //self.view.layer.borderWidth     = 20;
-   // self.view.layer.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0].CGColor;
-   // self.view.layer.borderColor     = [UIColor colorWithWhite:0.8 alpha:1.0].CGColor;
-    //self.edgesForExtendedLayout     = UIRectEdgeTop | UIRectEdgeBottom | UIRectEdgeLeft; // don't go under the top view
 }
 
 - (void)didReceiveMemoryWarning

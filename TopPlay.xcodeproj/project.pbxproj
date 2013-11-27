@@ -30,6 +30,7 @@
 		DD4EBA7A180B763B00FED418 /* TopPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA79180B763B00FED418 /* TopPlayTests.m */; };
 		DD4EBA8B180B789400FED418 /* TopPlayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */; };
 		DD4EBA8C180B789400FED418 /* TopPlayTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */; };
+		DD9EFF2D1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */; };
 		DDAF639A181A252400E238A9 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF6393181A24A700E238A9 /* libGTLTouchStaticLib.a */; };
 		DDAF639C181A254400E238A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF639B181A254400E238A9 /* Security.framework */; };
 		DDAF639E181A256300E238A9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF639D181A256300E238A9 /* SystemConfiguration.framework */; };
@@ -147,7 +148,6 @@
 		DDAF650E181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAF649C181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m */; };
 		DDAF650F181A2D0700E238A9 /* GTLYouTubeWatchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAF649E181A2D0700E238A9 /* GTLYouTubeWatchSettings.m */; };
 		DDED6E54182EC5FC00A6FD0C /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6E53182EC5FC00A6FD0C /* VideoCell.m */; };
-		DDF4712D18407657006D83C3 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4712C18407657006D83C3 /* InitViewController.m */; };
 		DDF4713018407695006D83C3 /* TopPlayMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -232,6 +232,15 @@
 		DD4EBA88180B789400FED418 /* TopPlayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayTableViewController.h; sourceTree = SOURCE_ROOT; };
 		DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayTableViewController.m; sourceTree = SOURCE_ROOT; };
 		DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopPlayTableViewController.xib; sourceTree = "<group>"; };
+		DD9EFE521842B9B100039AC3 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		DD9EFE531842B9B100039AC3 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
+		DD9EFE541842B9B100039AC3 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
+		DD9EFE551842B9B100039AC3 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		DD9EFE561842B9B100039AC3 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingSegue.h; sourceTree = "<group>"; };
+		DD9EFE571842B9B100039AC3 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		DD9EFE581842B9B100039AC3 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		DD9EFF2B1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayFavoritesMenuViewController.h; sourceTree = "<group>"; };
+		DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayFavoritesMenuViewController.m; sourceTree = "<group>"; };
 		DDAF6389181A24A700E238A9 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../../../google-api-objectivec-client-read-only/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
 		DDAF639B181A254400E238A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DDAF639D181A256300E238A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -491,8 +500,6 @@
 		DDAF649E181A2D0700E238A9 /* GTLYouTubeWatchSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLYouTubeWatchSettings.m; path = "../../../../../../../../../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTubeWatchSettings.m"; sourceTree = "<group>"; };
 		DDED6E52182EC5FC00A6FD0C /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
 		DDED6E53182EC5FC00A6FD0C /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
-		DDF4712B18407657006D83C3 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
-		DDF4712C18407657006D83C3 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
 		DDF4712E18407695006D83C3 /* TopPlayMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayMenuViewController.h; sourceTree = "<group>"; };
 		DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -527,6 +534,7 @@
 		DD12A6DB183DC84000B4B8D5 /* SlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DD9EFE501842B9B100039AC3 /* Headers */,
 				DD12A6DC183DC8B100B4B8D5 /* ECSlidingViewController */,
 			);
 			name = SlidingViewController;
@@ -602,6 +610,8 @@
 			children = (
 				DD12A6DB183DC84000B4B8D5 /* SlidingViewController */,
 				DD4EBA5D180B763B00FED418 /* TopPlayAppDelegate.h */,
+				DDF4712E18407695006D83C3 /* TopPlayMenuViewController.h */,
+				DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */,
 				DDED6E52182EC5FC00A6FD0C /* VideoCell.h */,
 				DDED6E53182EC5FC00A6FD0C /* VideoCell.m */,
 				DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */,
@@ -610,10 +620,8 @@
 				DD4EBA60180B763B00FED418 /* Main.storyboard */,
 				DD4EBA66180B763B00FED418 /* Images.xcassets */,
 				DD4EBA55180B763B00FED418 /* Supporting Files */,
-				DDF4712B18407657006D83C3 /* InitViewController.h */,
-				DDF4712C18407657006D83C3 /* InitViewController.m */,
-				DDF4712E18407695006D83C3 /* TopPlayMenuViewController.h */,
-				DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */,
+				DD9EFF2B1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.h */,
+				DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */,
 			);
 			path = TopPlay;
 			sourceTree = "<group>";
@@ -647,6 +655,28 @@
 				DD4EBA76180B763B00FED418 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD9EFE501842B9B100039AC3 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DD9EFE511842B9B100039AC3 /* ECSlidingViewController */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		DD9EFE511842B9B100039AC3 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD9EFE521842B9B100039AC3 /* ECPercentDrivenInteractiveTransition.h */,
+				DD9EFE531842B9B100039AC3 /* ECSlidingAnimationController.h */,
+				DD9EFE541842B9B100039AC3 /* ECSlidingConstants.h */,
+				DD9EFE551842B9B100039AC3 /* ECSlidingInteractiveTransition.h */,
+				DD9EFE561842B9B100039AC3 /* ECSlidingSegue.h */,
+				DD9EFE571842B9B100039AC3 /* ECSlidingViewController.h */,
+				DD9EFE581842B9B100039AC3 /* UIViewController+ECSlidingViewController.h */,
+			);
+			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 		DDAF638A181A24A700E238A9 /* Products */ = {
@@ -1077,9 +1107,9 @@
 				DDAF64AF181A2D0700E238A9 /* GTLYouTubeActivityListResponse.m in Sources */,
 				DDAF64A2181A2D0700E238A9 /* GTLYouTubeActivity.m in Sources */,
 				DDAF6508181A2D0700E238A9 /* GTLYouTubeVideoRecordingDetails.m in Sources */,
+				DD9EFF2D1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m in Sources */,
 				DDAF64D6181A2D0700E238A9 /* GTLYouTubeLocalizedString.m in Sources */,
 				DDAF650F181A2D0700E238A9 /* GTLYouTubeWatchSettings.m in Sources */,
-				DDF4712D18407657006D83C3 /* InitViewController.m in Sources */,
 				DDAF64CF181A2D0700E238A9 /* GTLYouTubeLiveBroadcastStatus.m in Sources */,
 				DDAF64EA181A2D0700E238A9 /* GTLYouTubeSearchResultSnippet.m in Sources */,
 				DDAF64B5181A2D0700E238A9 /* GTLYouTubeChannelBrandingSettings.m in Sources */,
