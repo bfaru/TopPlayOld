@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0D7ADA184BBCA40054A562 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0D7AD9184BBCA40054A562 /* background.png */; };
+		DD0D7AE0184BE07E0054A562 /* TopPlaySlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0D7ADF184BE07E0054A562 /* TopPlaySlidingViewController.m */; };
 		DD12A6ED183DC8B100B4B8D5 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD12A6DF183DC8B100B4B8D5 /* ECPercentDrivenInteractiveTransition.m */; };
 		DD12A6EE183DC8B100B4B8D5 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD12A6E1183DC8B100B4B8D5 /* ECSlidingAnimationController.m */; };
 		DD12A6EF183DC8B100B4B8D5 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = DD12A6E4183DC8B100B4B8D5 /* ECSlidingInteractiveTransition.m */; };
@@ -30,6 +32,26 @@
 		DD4EBA7A180B763B00FED418 /* TopPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA79180B763B00FED418 /* TopPlayTests.m */; };
 		DD4EBA8B180B789400FED418 /* TopPlayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */; };
 		DD4EBA8C180B789400FED418 /* TopPlayTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */; };
+		DD540296186C9D7400FFD3A7 /* TopPlayVideoFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */; };
+		DD54029C187BCFAC00FFD3A7 /* SportsChannelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD54029B187BCFAC00FFD3A7 /* SportsChannelList.plist */; };
+		DD8B7E25184FE89900CBD650 /* TopPlaySportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8B7E24184FE89900CBD650 /* TopPlaySportsViewController.m */; };
+		DD8DAB05185F70BD00E25A81 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAF3185F70BD00E25A81 /* AFHTTPRequestOperation.m */; };
+		DD8DAB06185F70BD00E25A81 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAF5185F70BD00E25A81 /* AFHTTPRequestOperationManager.m */; };
+		DD8DAB07185F70BD00E25A81 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAF7185F70BD00E25A81 /* AFHTTPSessionManager.m */; };
+		DD8DAB08185F70BD00E25A81 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAFA185F70BD00E25A81 /* AFNetworkReachabilityManager.m */; };
+		DD8DAB09185F70BD00E25A81 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAFC185F70BD00E25A81 /* AFSecurityPolicy.m */; };
+		DD8DAB0A185F70BD00E25A81 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAAFE185F70BD00E25A81 /* AFURLConnectionOperation.m */; };
+		DD8DAB0B185F70BD00E25A81 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB00185F70BD00E25A81 /* AFURLRequestSerialization.m */; };
+		DD8DAB0C185F70BD00E25A81 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB02185F70BD00E25A81 /* AFURLResponseSerialization.m */; };
+		DD8DAB0D185F70BD00E25A81 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB04185F70BD00E25A81 /* AFURLSessionManager.m */; };
+		DD8DAB21185F710700E25A81 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB13185F710700E25A81 /* AFNetworkActivityIndicatorManager.m */; };
+		DD8DAB22185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB15185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m */; };
+		DD8DAB23185F710700E25A81 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB17185F710700E25A81 /* UIAlertView+AFNetworking.m */; };
+		DD8DAB24185F710700E25A81 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB19185F710700E25A81 /* UIButton+AFNetworking.m */; };
+		DD8DAB25185F710700E25A81 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB1B185F710700E25A81 /* UIImageView+AFNetworking.m */; };
+		DD8DAB26185F710700E25A81 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB1E185F710700E25A81 /* UIProgressView+AFNetworking.m */; };
+		DD8DAB27185F710700E25A81 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB20185F710700E25A81 /* UIWebView+AFNetworking.m */; };
+		DD8DAB2E18652B8B00E25A81 /* YouTubeService.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8DAB2D18652B8B00E25A81 /* YouTubeService.m */; };
 		DD9EFF2D1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */; };
 		DDAF639A181A252400E238A9 /* libGTLTouchStaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF6393181A24A700E238A9 /* libGTLTouchStaticLib.a */; };
 		DDAF639C181A254400E238A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAF639B181A254400E238A9 /* Security.framework */; };
@@ -197,6 +219,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD0D7AD9184BBCA40054A562 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		DD0D7ADE184BE07E0054A562 /* TopPlaySlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlaySlidingViewController.h; sourceTree = "<group>"; };
+		DD0D7ADF184BE07E0054A562 /* TopPlaySlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaySlidingViewController.m; sourceTree = "<group>"; };
 		DD12A6DE183DC8B100B4B8D5 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		DD12A6DF183DC8B100B4B8D5 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
 		DD12A6E0183DC8B100B4B8D5 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
@@ -232,6 +257,47 @@
 		DD4EBA88180B789400FED418 /* TopPlayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayTableViewController.h; sourceTree = SOURCE_ROOT; };
 		DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayTableViewController.m; sourceTree = SOURCE_ROOT; };
 		DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopPlayTableViewController.xib; sourceTree = "<group>"; };
+		DD540294186C9D7400FFD3A7 /* TopPlayVideoFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayVideoFetch.h; sourceTree = "<group>"; };
+		DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayVideoFetch.m; sourceTree = "<group>"; };
+		DD54029B187BCFAC00FFD3A7 /* SportsChannelList.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = SportsChannelList.plist; sourceTree = "<group>"; };
+		DD8B7E23184FE89900CBD650 /* TopPlaySportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlaySportsViewController.h; sourceTree = "<group>"; };
+		DD8B7E24184FE89900CBD650 /* TopPlaySportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlaySportsViewController.m; sourceTree = "<group>"; };
+		DD8DAAF2185F70BD00E25A81 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		DD8DAAF3185F70BD00E25A81 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		DD8DAAF4185F70BD00E25A81 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		DD8DAAF5185F70BD00E25A81 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		DD8DAAF6185F70BD00E25A81 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DD8DAAF7185F70BD00E25A81 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DD8DAAF8185F70BD00E25A81 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		DD8DAAF9185F70BD00E25A81 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DD8DAAFA185F70BD00E25A81 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DD8DAAFB185F70BD00E25A81 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DD8DAAFC185F70BD00E25A81 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DD8DAAFD185F70BD00E25A81 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		DD8DAAFE185F70BD00E25A81 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		DD8DAAFF185F70BD00E25A81 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DD8DAB00185F70BD00E25A81 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DD8DAB01185F70BD00E25A81 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DD8DAB02185F70BD00E25A81 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DD8DAB03185F70BD00E25A81 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DD8DAB04185F70BD00E25A81 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DD8DAB12185F710700E25A81 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		DD8DAB13185F710700E25A81 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		DD8DAB14185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB15185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB16185F710700E25A81 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB17185F710700E25A81 /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB18185F710700E25A81 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB19185F710700E25A81 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB1A185F710700E25A81 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB1B185F710700E25A81 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB1C185F710700E25A81 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB1D185F710700E25A81 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB1E185F710700E25A81 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB1F185F710700E25A81 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		DD8DAB20185F710700E25A81 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		DD8DAB2C18652B8B00E25A81 /* YouTubeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeService.h; sourceTree = "<group>"; };
+		DD8DAB2D18652B8B00E25A81 /* YouTubeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeService.m; sourceTree = "<group>"; };
 		DD9EFE521842B9B100039AC3 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
 		DD9EFE531842B9B100039AC3 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
 		DD9EFE541842B9B100039AC3 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
@@ -608,20 +674,30 @@
 		DD4EBA54180B763B00FED418 /* TopPlay */ = {
 			isa = PBXGroup;
 			children = (
+				DD8DAB11185F710700E25A81 /* UIKit+AFNetworking */,
+				DD8DAAF1185F70BD00E25A81 /* AFNetworking */,
 				DD12A6DB183DC84000B4B8D5 /* SlidingViewController */,
 				DD4EBA5D180B763B00FED418 /* TopPlayAppDelegate.h */,
 				DDF4712E18407695006D83C3 /* TopPlayMenuViewController.h */,
 				DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */,
 				DDED6E52182EC5FC00A6FD0C /* VideoCell.h */,
 				DDED6E53182EC5FC00A6FD0C /* VideoCell.m */,
+				DD8DAB2C18652B8B00E25A81 /* YouTubeService.h */,
+				DD8DAB2D18652B8B00E25A81 /* YouTubeService.m */,
+				DD9EFF2B1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.h */,
+				DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */,
+				DD0D7ADE184BE07E0054A562 /* TopPlaySlidingViewController.h */,
+				DD0D7ADF184BE07E0054A562 /* TopPlaySlidingViewController.m */,
+				DD8B7E23184FE89900CBD650 /* TopPlaySportsViewController.h */,
+				DD8B7E24184FE89900CBD650 /* TopPlaySportsViewController.m */,
 				DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */,
 				DD4EBA88180B789400FED418 /* TopPlayTableViewController.h */,
+				DD540294186C9D7400FFD3A7 /* TopPlayVideoFetch.h */,
+				DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */,
 				DD4EBA5E180B763B00FED418 /* TopPlayAppDelegate.m */,
 				DD4EBA60180B763B00FED418 /* Main.storyboard */,
 				DD4EBA66180B763B00FED418 /* Images.xcassets */,
 				DD4EBA55180B763B00FED418 /* Supporting Files */,
-				DD9EFF2B1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.h */,
-				DD9EFF2C1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m */,
 			);
 			path = TopPlay;
 			sourceTree = "<group>";
@@ -629,9 +705,11 @@
 		DD4EBA55180B763B00FED418 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD54029B187BCFAC00FFD3A7 /* SportsChannelList.plist */,
 				DDAF63BB181A2C3800E238A9 /* YouTube Files */,
 				DDAF639F181A2AA800E238A9 /* Headers */,
 				DD4EBA56180B763B00FED418 /* TopPlay-Info.plist */,
+				DD0D7AD9184BBCA40054A562 /* background.png */,
 				DD4EBA57180B763B00FED418 /* InfoPlist.strings */,
 				DD4EBA5A180B763B00FED418 /* main.m */,
 				DD4EBA5C180B763B00FED418 /* TopPlay-Prefix.pch */,
@@ -655,6 +733,54 @@
 				DD4EBA76180B763B00FED418 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD8DAAF1185F70BD00E25A81 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD8DAAF2185F70BD00E25A81 /* AFHTTPRequestOperation.h */,
+				DD8DAAF3185F70BD00E25A81 /* AFHTTPRequestOperation.m */,
+				DD8DAAF4185F70BD00E25A81 /* AFHTTPRequestOperationManager.h */,
+				DD8DAAF5185F70BD00E25A81 /* AFHTTPRequestOperationManager.m */,
+				DD8DAAF6185F70BD00E25A81 /* AFHTTPSessionManager.h */,
+				DD8DAAF7185F70BD00E25A81 /* AFHTTPSessionManager.m */,
+				DD8DAAF8185F70BD00E25A81 /* AFNetworking.h */,
+				DD8DAAF9185F70BD00E25A81 /* AFNetworkReachabilityManager.h */,
+				DD8DAAFA185F70BD00E25A81 /* AFNetworkReachabilityManager.m */,
+				DD8DAAFB185F70BD00E25A81 /* AFSecurityPolicy.h */,
+				DD8DAAFC185F70BD00E25A81 /* AFSecurityPolicy.m */,
+				DD8DAAFD185F70BD00E25A81 /* AFURLConnectionOperation.h */,
+				DD8DAAFE185F70BD00E25A81 /* AFURLConnectionOperation.m */,
+				DD8DAAFF185F70BD00E25A81 /* AFURLRequestSerialization.h */,
+				DD8DAB00185F70BD00E25A81 /* AFURLRequestSerialization.m */,
+				DD8DAB01185F70BD00E25A81 /* AFURLResponseSerialization.h */,
+				DD8DAB02185F70BD00E25A81 /* AFURLResponseSerialization.m */,
+				DD8DAB03185F70BD00E25A81 /* AFURLSessionManager.h */,
+				DD8DAB04185F70BD00E25A81 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		DD8DAB11185F710700E25A81 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DD8DAB12185F710700E25A81 /* AFNetworkActivityIndicatorManager.h */,
+				DD8DAB13185F710700E25A81 /* AFNetworkActivityIndicatorManager.m */,
+				DD8DAB14185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.h */,
+				DD8DAB15185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m */,
+				DD8DAB16185F710700E25A81 /* UIAlertView+AFNetworking.h */,
+				DD8DAB17185F710700E25A81 /* UIAlertView+AFNetworking.m */,
+				DD8DAB18185F710700E25A81 /* UIButton+AFNetworking.h */,
+				DD8DAB19185F710700E25A81 /* UIButton+AFNetworking.m */,
+				DD8DAB1A185F710700E25A81 /* UIImageView+AFNetworking.h */,
+				DD8DAB1B185F710700E25A81 /* UIImageView+AFNetworking.m */,
+				DD8DAB1C185F710700E25A81 /* UIKit+AFNetworking.h */,
+				DD8DAB1D185F710700E25A81 /* UIProgressView+AFNetworking.h */,
+				DD8DAB1E185F710700E25A81 /* UIProgressView+AFNetworking.m */,
+				DD8DAB1F185F710700E25A81 /* UIWebView+AFNetworking.h */,
+				DD8DAB20185F710700E25A81 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
 		DD9EFE501842B9B100039AC3 /* Headers */ = {
@@ -1006,7 +1132,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = TopPlay;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Bryan Garces";
 				TargetAttributes = {
 					DD4EBA6B180B763B00FED418 = {
@@ -1076,7 +1202,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD12A6F4183DC8B100B4B8D5 /* README.md in Resources */,
+				DD54029C187BCFAC00FFD3A7 /* SportsChannelList.plist in Resources */,
 				DD4EBA67180B763B00FED418 /* Images.xcassets in Resources */,
+				DD0D7ADA184BBCA40054A562 /* background.png in Resources */,
 				DD4EBA59180B763B00FED418 /* InfoPlist.strings in Resources */,
 				DD4EBA62180B763B00FED418 /* Main.storyboard in Resources */,
 				DD4EBA8C180B789400FED418 /* TopPlayTableViewController.xib in Resources */,
@@ -1108,6 +1236,7 @@
 				DDAF64A2181A2D0700E238A9 /* GTLYouTubeActivity.m in Sources */,
 				DDAF6508181A2D0700E238A9 /* GTLYouTubeVideoRecordingDetails.m in Sources */,
 				DD9EFF2D1845C09A00039AC3 /* TopPlayFavoritesMenuViewController.m in Sources */,
+				DD0D7AE0184BE07E0054A562 /* TopPlaySlidingViewController.m in Sources */,
 				DDAF64D6181A2D0700E238A9 /* GTLYouTubeLocalizedString.m in Sources */,
 				DDAF650F181A2D0700E238A9 /* GTLYouTubeWatchSettings.m in Sources */,
 				DDAF64CF181A2D0700E238A9 /* GTLYouTubeLiveBroadcastStatus.m in Sources */,
@@ -1115,9 +1244,13 @@
 				DDAF64B5181A2D0700E238A9 /* GTLYouTubeChannelBrandingSettings.m in Sources */,
 				DDAF64ED181A2D0700E238A9 /* GTLYouTubeSubscriptionListResponse.m in Sources */,
 				DDAF650A181A2D0700E238A9 /* GTLYouTubeVideoStatistics.m in Sources */,
+				DD8DAB0D185F70BD00E25A81 /* AFURLSessionManager.m in Sources */,
+				DD8DAB22185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				DDAF64CC181A2D0700E238A9 /* GTLYouTubeLiveBroadcastContentDetails.m in Sources */,
 				DDAF64EE181A2D0700E238A9 /* GTLYouTubeSubscriptionSnippet.m in Sources */,
+				DD8DAB0C185F70BD00E25A81 /* AFURLResponseSerialization.m in Sources */,
 				DDAF64C9181A2D0700E238A9 /* GTLYouTubeInvideoPromotion.m in Sources */,
+				DD8DAB05185F70BD00E25A81 /* AFHTTPRequestOperation.m in Sources */,
 				DDAF64E5181A2D0700E238A9 /* GTLYouTubePromotedItemId.m in Sources */,
 				DDAF64C3181A2D0700E238A9 /* GTLYouTubeGuideCategoryListResponse.m in Sources */,
 				DD12A6EF183DC8B100B4B8D5 /* ECSlidingInteractiveTransition.m in Sources */,
@@ -1139,16 +1272,24 @@
 				DDAF64FF181A2D0700E238A9 /* GTLYouTubeVideoFileDetailsVideoStream.m in Sources */,
 				DDAF64D7181A2D0700E238A9 /* GTLYouTubeMonitorStreamInfo.m in Sources */,
 				DDAF64AD181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsSubscription.m in Sources */,
+				DD8DAB0A185F70BD00E25A81 /* AFURLConnectionOperation.m in Sources */,
 				DDAF64C5181A2D0700E238A9 /* GTLYouTubeImageSettings.m in Sources */,
+				DD8DAB21185F710700E25A81 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				DDAF64B6181A2D0700E238A9 /* GTLYouTubeChannelContentDetails.m in Sources */,
+				DD8DAB06185F70BD00E25A81 /* AFHTTPRequestOperationManager.m in Sources */,
 				DDAF6505181A2D0700E238A9 /* GTLYouTubeVideoProcessingDetailsProcessingProgress.m in Sources */,
 				DDAF650D181A2D0700E238A9 /* GTLYouTubeVideoSuggestionsTagSuggestion.m in Sources */,
 				DD12A6ED183DC8B100B4B8D5 /* ECPercentDrivenInteractiveTransition.m in Sources */,
 				DDAF64F7181A2D0700E238A9 /* GTLYouTubeVideoCategoryListResponse.m in Sources */,
+				DD8B7E25184FE89900CBD650 /* TopPlaySportsViewController.m in Sources */,
+				DD540296186C9D7400FFD3A7 /* TopPlayVideoFetch.m in Sources */,
+				DD8DAB25185F710700E25A81 /* UIImageView+AFNetworking.m in Sources */,
 				DDAF64B7181A2D0700E238A9 /* GTLYouTubeChannelConversionPing.m in Sources */,
+				DD8DAB2E18652B8B00E25A81 /* YouTubeService.m in Sources */,
 				DDAF64B0181A2D0700E238A9 /* GTLYouTubeActivitySnippet.m in Sources */,
 				DDAF64F6181A2D0700E238A9 /* GTLYouTubeVideoCategory.m in Sources */,
 				DD12A6EE183DC8B100B4B8D5 /* ECSlidingAnimationController.m in Sources */,
+				DD8DAB27185F710700E25A81 /* UIWebView+AFNetworking.m in Sources */,
 				DDAF64CB181A2D0700E238A9 /* GTLYouTubeLiveBroadcast.m in Sources */,
 				DDAF64B3181A2D0700E238A9 /* GTLYouTubeChannelAuditDetails.m in Sources */,
 				DDAF64A9181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsPlaylistItem.m in Sources */,
@@ -1159,6 +1300,7 @@
 				DDAF64C4181A2D0700E238A9 /* GTLYouTubeGuideCategorySnippet.m in Sources */,
 				DD4EBA5B180B763B00FED418 /* main.m in Sources */,
 				DDAF64C0181A2D0700E238A9 /* GTLYouTubeContentRating.m in Sources */,
+				DD8DAB09185F70BD00E25A81 /* AFSecurityPolicy.m in Sources */,
 				DDAF64DD181A2D0700E238A9 /* GTLYouTubePlaylistItemListResponse.m in Sources */,
 				DDAF64A6181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsComment.m in Sources */,
 				DDAF64E1181A2D0700E238A9 /* GTLYouTubePlaylistPlayer.m in Sources */,
@@ -1168,11 +1310,15 @@
 				DDAF64FA181A2D0700E238A9 /* GTLYouTubeVideoContentDetailsRegionRestriction.m in Sources */,
 				DDAF64A1181A2D0700E238A9 /* GTLYouTubeAccessPolicy.m in Sources */,
 				DDAF64D1181A2D0700E238A9 /* GTLYouTubeLiveStreamContentDetails.m in Sources */,
+				DD8DAB08185F70BD00E25A81 /* AFNetworkReachabilityManager.m in Sources */,
 				DDAF64FC181A2D0700E238A9 /* GTLYouTubeVideoConversionPings.m in Sources */,
 				DDAF650C181A2D0700E238A9 /* GTLYouTubeVideoSuggestions.m in Sources */,
 				DDAF64AC181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsSocial.m in Sources */,
 				DDAF64BA181A2D0700E238A9 /* GTLYouTubeChannelSettings.m in Sources */,
+				DD8DAB07185F70BD00E25A81 /* AFHTTPSessionManager.m in Sources */,
+				DD8DAB26185F710700E25A81 /* UIProgressView+AFNetworking.m in Sources */,
 				DDAF64DC181A2D0700E238A9 /* GTLYouTubePlaylistItemContentDetails.m in Sources */,
+				DD8DAB24185F710700E25A81 /* UIButton+AFNetworking.m in Sources */,
 				DDAF64D8181A2D0700E238A9 /* GTLYouTubePageInfo.m in Sources */,
 				DDAF64EF181A2D0700E238A9 /* GTLYouTubeSubscriptionSubscriberSnippet.m in Sources */,
 				DDAF64A3181A2D0700E238A9 /* GTLYouTubeActivityContentDetails.m in Sources */,
@@ -1193,6 +1339,7 @@
 				DDAF64C1181A2D0700E238A9 /* GTLYouTubeGeoPoint.m in Sources */,
 				DDAF64E4181A2D0700E238A9 /* GTLYouTubePromotedItem.m in Sources */,
 				DDAF64F9181A2D0700E238A9 /* GTLYouTubeVideoContentDetails.m in Sources */,
+				DD8DAB23185F710700E25A81 /* UIAlertView+AFNetworking.m in Sources */,
 				DDAF650E181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m in Sources */,
 				DDAF64D5181A2D0700E238A9 /* GTLYouTubeLocalizedProperty.m in Sources */,
 				DDAF64C7181A2D0700E238A9 /* GTLYouTubeInvideoBranding.m in Sources */,
@@ -1212,6 +1359,7 @@
 				DD12A6F2183DC8B100B4B8D5 /* UIViewController+ECSlidingViewController.m in Sources */,
 				DDAF64E9181A2D0700E238A9 /* GTLYouTubeSearchResult.m in Sources */,
 				DDAF64B2181A2D0700E238A9 /* GTLYouTubeChannel.m in Sources */,
+				DD8DAB0B185F70BD00E25A81 /* AFURLRequestSerialization.m in Sources */,
 				DDAF64D9181A2D0700E238A9 /* GTLYouTubePlaylist.m in Sources */,
 				DDAF64BB181A2D0700E238A9 /* GTLYouTubeChannelSnippet.m in Sources */,
 				DDAF649F181A2D0700E238A9 /* GTLQueryYouTube.m in Sources */,
@@ -1282,7 +1430,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1321,7 +1468,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1360,6 +1506,7 @@
 				INFOPLIST_FILE = "TopPlay/TopPlay-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				"OTHER_CFLAGS[arch=*]" = "-DDEBUG=1";
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -1392,7 +1539,6 @@
 		DD4EBA81180B763B00FED418 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopPlay.app/TopPlay";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -1415,7 +1561,6 @@
 		DD4EBA82180B763B00FED418 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TopPlay.app/TopPlay";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
