@@ -8,11 +8,20 @@
 
 #import "TopPlayAppDelegate.h"
 #import "TopPlayTableViewController.h"
+#import "ECSlidingSegue.h"
+
+
+@interface TopPlayAppDelegate ()
+
+
+@end
 
 @implementation TopPlayAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setupChannelData];
+   
    /*TopPlayTableViewController *topPlayViewController = [[TopPlayTableViewController alloc] initWithNibName:@"TopPlayTableViewController" bundle:nil];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:topPlayViewController];
@@ -21,7 +30,33 @@
     // Override point for customization after application launch.
     return YES;
 }
-							
+
+- (void)setupChannelData
+{
+    NSString *path = [self dataFilePath];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+            NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+            NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+            self.channels = [unarchiver decodeObjectForKey:@"SportsChannel"];
+            [unarchiver finishDecoding];
+            
+        } else {
+            self.channels = [[NSMutableArray alloc]init];
+        }
+    
+    
+}
+
+- (NSString *)dataFilePath
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SportsChannelList" ofType:@"plist"];
+    return path;
+    //For getting the files's path stored in the documents directory not the resources folder.
+    // return [[self documentsDirectory] stringByAppendingPathComponent:@"SportsChannelList.plist"];
+}
+
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

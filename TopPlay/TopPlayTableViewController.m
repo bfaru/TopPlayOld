@@ -28,6 +28,8 @@
 #import "GTLYouTubeGuideCategory.h"
 #import "UIViewController+ECSlidingViewController.h"
 #import "YouTubeService.h"
+#import "TopPlayAppDelegate.h"
+
 
 
 
@@ -36,7 +38,7 @@
 @property (nonatomic, readonly) GTLServiceYouTube *youTubeService;
 @property (nonatomic) NSArray *content;
 @property (nonatomic) NSMutableArray  *soccerContent;
-@property (nonatomic) NSMutableArray *sportsArray;
+@property (nonatomic, strong) NSMutableArray *sportsArray;
 @property (nonatomic) NSMutableArray *videosArray;
 @property (nonatomic) NSString *playlistId;
 //@property (nonatomic) NSArray *imageArray;
@@ -63,7 +65,8 @@
 
 - (void)loadChannels {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SportsChannelList" ofType:@"plist"];
-    self.sportsArray = [NSArray arrayWithContentsOfFile:path];
+  //  self.sportsArray = [NSArray arrayWithContentsOfFile:path];
+    
 }
 
 - (NSString *)documentsDirectory
@@ -78,7 +81,8 @@
 {
     if ((self = [super initWithCoder:aDecoder])) {
        // self.sportsArray = [[NSMutableArray alloc] init];
-        [self loadSportsChannel];
+       // [self loadSportsChannel];
+        
     }
     return self;
 }
@@ -89,11 +93,11 @@
     if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
         NSData *data = [[NSData alloc] initWithContentsOfFile:path];
         NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
-        self.sportsArray = [unarchiver decodeObjectForKey:@"SportsChannel"];
+      // self.sportsArray = [unarchiver decodeObjectForKey:@"SportsChannel"];
         [unarchiver finishDecoding];
         
     } else {
-        self.sportsArray = [[NSMutableArray alloc]init];
+    //    self.sportsArray = [[NSMutableArray alloc]init];
     }
 }
 
@@ -108,7 +112,7 @@
 {
     NSMutableData *data = [[NSMutableData alloc] init];
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc ] initForWritingWithMutableData:data];
-    [archiver encodeObject:self.sportsArray forKey:@"SportsChannel"];
+   // [archiver encodeObject:self.sportsArray forKey:@"SportsChannel"];
     [archiver finishEncoding];
     [data writeToFile:[self dataFilePath] atomically: YES];
 }
@@ -169,9 +173,13 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    //[self fetchCategory];
     
-    [self fetchMyChannelList];
+    
+    //[self fetchCategory];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self fetchMyChannelList];
+
+    });
     
   //  [self.tableView reloadData];
 
@@ -181,6 +189,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+   
     
    // [self.view addGestureRecognizer:self.slidingViewController.panGesture];
     //[self.navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
@@ -332,32 +342,22 @@
 
             NSLog(@"COUNT: %d", [response count]);
 *///put the end green thing here
-            self.soccerContent = [[NSMutableArray alloc] init];
-            self.videosArray = [[NSMutableArray alloc] init];
-                for (NSDictionary *dic in self.sportsArray) {
-                    
-                    
-                    NSString *channelId = dic[@"channelid"];
-                    
-                    NSLog(@"CHANNELS LIST: %@ %@", dic[@"channeltitle"],dic[@"channelid"]);
-                    if ([channelId  isEqual: @"UCWV3obpZVGgJ3j9FVhEjF2Q"]|| [channelId  isEqual: @"UCkzCjdRMrW2vXLx8mvPVLdQ"] || [channelId  isEqual: @"UC14UlmYlSNiQCBe9Eookf_A"]|| [channelId  isEqual: @"UCNhxq7He5p-_FdBh0OaxcQg"]|| [channelId  isEqual: @"UC4qDTI9NzzrwgpSDbK2NoFw"]|| [channelId  isEqual: @"UCEPKlFeUjRY_1mpZP8GnkVg"]|| [channelId  isEqual: @"UC-KQIG4-dyR1kIHCQFOJ-hQ"]|| [channelId  isEqual: @"UCjVd6vTuoAYLFYvX5TSK1aA"]|| [channelId  isEqual: @"UCpcTrCXblq78GZrTUTLWeBw"]|| [channelId  isEqual: @"UCC9h3H-sGrvqd2otknZntsQ"]|| [channelId  isEqual: @"HCl96Mf_5q4ek"]|| [channelId  isEqual: @"UCU2PacFf99vhb3hNiYDmxww"]|| [channelId  isEqual: @"UCEiJdZfsDgXkWe4XGg2jqGA"]|| [channelId  isEqual: @"UCb1JlyEU7j_NrSZjShW_apw"]|| [channelId  isEqual: @"UCXnPiEv1DoUCDAqDUXT9shQ"]|| [channelId  isEqual: @"UCQsH5XtIc9hONE1BQjucM0g"]|| [channelId  isEqual: @"UCKcx1uK38H4AOkmfv4ywlrg"]|| [channelId  isEqual: @"UC45H39UhBIJNlHK1JTo7vMg"]|| [channelId  isEqual: @"UCaQHxlbPAmh7VWRudyRkwjw"]|| [channelId  isEqual: @"UCbWUEnTRHb3bRdrnovq8iuA"]|| [channelId  isEqual: @"UCTv-XvfzLX3i4IGWAm4sbmA"]|| [channelId  isEqual: @"UC9LQwHZoucFT94I2h6JOcjw"]|| [channelId  isEqual: @"UCSZbXT5TLLW_i-5W8FZpFsg"]|| [channelId  isEqual: @"UC5EKlflss5IVgIfI4-sjd9w"]|| [channelId  isEqual: @"UC0uRT_armQXqds_rjTjqJ0g"]|| [channelId  isEqual: @"HCppoNHDAYDsM"]|| [channelId  isEqual: @"HCv3YCTE958tA"]|| [channelId  isEqual: @"HCdWYHAksllbg"]  || [channelId  isEqual: @"HC__1puDlgayI"] || [channelId  isEqual: @"HCbG9qKNp_n0c"] || [channelId  isEqual: @"HCpVq5R0I6ICQ"] ){
-                        
-                        [self.soccerContent addObject:dic];
-                        
-                        NSString *str = dic[@"uploadsId"];
-                        NSLog(@"STRTRTRTRTRT: %@", str);
-                        //_myPlayList = channel.contentDetails.relatedPlaylists;
-                        if (str) {
-                            
-                            
-                            self.playlistId = str;
+     
+     
+     TopPlayAppDelegate *appDelegate = (TopPlayAppDelegate *)[[UIApplication sharedApplication] delegate];
+     self.sportsArray = appDelegate.channels;
+     for (NSDictionary *dic in self.sportsArray) {
+         NSString *channelTitle = dic[@"channeltitle"];
+         if ([channelTitle isEqualToString:self.navigationController.title]) {
+             self.playlistId = dic[@"uploadsId"];
+             break;
+         }
+     }
+                      //      self.playlistId = str;
                             [self fetchMyPlaylist];
-                            
-                        }
-
-                    }
-
-                }
+     
+     
+     
             /*NSLog(@"SOCCERARRAY: %d",[self.soccerContent count]);
                 
                 
@@ -406,108 +406,109 @@
         
     }
 
-- (void)fetchMyPlaylist {
-    
-    NSString *playlistId = self.playlistId;
-
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-    
-    
-
-
-
-   // NSString *playlistId = _myPlayList.uploads;
-    if ([playlistId length] >0) {
+- (void)fetchEntries
+{
+    // NSString *playlistId = _myPlayList.uploads;
+    if ([self.playlistId length] >0) {
         //GTLServiceYouTube *service = self.youTubeService;
         GTLServiceYouTube *service = [YouTubeService youTubeSharedClient];
-
+        
         service.APIKey = @"AIzaSyAffsJ1twluL4E3Ks9VW3639Af4j3LPHyc";
         GTLQueryYouTube *query = [GTLQueryYouTube queryForPlaylistItemsListWithPart:@"snippet, contentDetails"];
         query.playlistId = self.playlistId;
-        query.maxResults = 5;
+        query.maxResults = 50;
         
-    
+        
         //query.pageToken = @"CAUQAQ";
-        
         
         _playlistItemListTicket = [service executeQuery:query completionHandler:^(GTLServiceTicket *ticket, GTLYouTubePlaylistItemListResponse * playlistItemList, NSError *error ){
             
             //[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-
+            
             _playlistItemList = playlistItemList;
             _playlistError = error;
             _playlistItemListTicket  = nil;
             if (error == nil) {
                 
                 
-               // _playlistItemListTicket.retryBlock = nil;
+                // _playlistItemListTicket.retryBlock = nil;
                 //_playlistItemListTicket.uploadProgressBlock = nil;
                 
                 //creating an array for the table's content
                 //NSDictionary *jSon = _playlistItemList;
                 
-               // self.content= _playlistItemList.items;
+                // self.content= _playlistItemList.items;
                 
-
+                self.videosArray = [[NSMutableArray alloc] init];
                 NSArray *array = [_playlistItemList JSONValueForKey:@"items"];
                 for (NSDictionary *dic in array) {
                     //if ([self.videosArray count]< 100) {
-                        [self.videosArray addObject:dic];
+                    [self.videosArray addObject:dic];
                     
-
-                  //  }
+                    
+                    //  }
                     
                 }
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self.tableView reloadData];
                 });
-
-               // self.content= [_playlistItemList JSONValueForKey:@"items"];
-                //[self.tableView reloadData];
-               /// self.content =dictionary[@"items"];              // GTLYouTubePlaylistItem *anotherItem
                 
-
+                // self.content= [_playlistItemList JSONValueForKey:@"items"];
+                //[self.tableView reloadData];
+                /// self.content =dictionary[@"items"];              // GTLYouTubePlaylistItem *anotherItem
+                
+                
                 //where i was checking all the responses
                 /*for (GTLYouTubePlaylistItem *item in _playlistItemList.items) {
-                   //for (GTLYouTubePlaylistItem *object in item) {
-                        
-                    
-                    NSMutableDictionary *dictionary = [item JSONValueForKey:@"contentDetails"];
-                    NSMutableDictionary *snippetDictionary = [item JSONValueForKey:@"snippet"];
-                    NSDictionary *thumbnsilDic = snippetDictionary[@"thumbnails"];
-                    //NSMutableDictionary *snipetDictionary = [item JSONValueForKey:@"snippet"];
-                   // GTLYouTubePlaylistItemSnippet *snippet = [item JSONValueForKey:@"snippet"];
-                  //  [self.titleArray addObject:item.snippet.title];
-                  //  NSString *realTitle = [self.titleArray objectAtIndex:0];
-                    NSString *string = snippetDictionary[@"title"];
-                    //[self.titleArray addObject:string ];
-
-                    
-                   // GTLYouTubeThumbnailDetails *thumbails = item.snippet[{@"
-                    NSLog(@"snippet: %@", item.snippet);
-                   NSLog(@"REALTITLE: %@", item.snippet.title);
-                    NSLog(@"realthumbnail: %@ ",thumbnsilDic[@"high"][@"url"]);
-                    NSLog(@"realthumbnail: %@",snippetDictionary[@"channelTitle"]);
-
-                    self.videoTilte = [dictionary objectForKey:@"videoId"];
-                    NSLog(@"contentDetails: %@", self.videoTilte);
-                    //NSLog(@"titlearray: %@", self.titleArray);
-                }*/
-
+                 //for (GTLYouTubePlaylistItem *object in item) {
+                 
+                 
+                 NSMutableDictionary *dictionary = [item JSONValueForKey:@"contentDetails"];
+                 NSMutableDictionary *snippetDictionary = [item JSONValueForKey:@"snippet"];
+                 NSDictionary *thumbnsilDic = snippetDictionary[@"thumbnails"];
+                 //NSMutableDictionary *snipetDictionary = [item JSONValueForKey:@"snippet"];
+                 // GTLYouTubePlaylistItemSnippet *snippet = [item JSONValueForKey:@"snippet"];
+                 //  [self.titleArray addObject:item.snippet.title];
+                 //  NSString *realTitle = [self.titleArray objectAtIndex:0];
+                 NSString *string = snippetDictionary[@"title"];
+                 //[self.titleArray addObject:string ];
+                 
+                 
+                 // GTLYouTubeThumbnailDetails *thumbails = item.snippet[{@"
+                 NSLog(@"snippet: %@", item.snippet);
+                 NSLog(@"REALTITLE: %@", item.snippet.title);
+                 NSLog(@"realthumbnail: %@ ",thumbnsilDic[@"high"][@"url"]);
+                 NSLog(@"realthumbnail: %@",snippetDictionary[@"channelTitle"]);
+                 
+                 self.videoTilte = [dictionary objectForKey:@"videoId"];
+                 NSLog(@"contentDetails: %@", self.videoTilte);
+                 //NSLog(@"titlearray: %@", self.titleArray);
+                 }*/
+                
                 // GTLYouTubePlaylistItemSnippet *itemSnippet = item.snippet;
-                   // GTLYouTubeVideoContentDetails *contentDetails = item.contentDetails;
-                   // NSString *videoId = nil;
-              //videoId =  contentDetails.videoId;
-                    //GTLYouTubeResourceId *resourceId = itemSnippet.resourceId;
-               // }
-        //dispatch's closing brases
+                // GTLYouTubeVideoContentDetails *contentDetails = item.contentDetails;
+                // NSString *videoId = nil;
+                //videoId =  contentDetails.videoId;
+                //GTLYouTubeResourceId *resourceId = itemSnippet.resourceId;
+                // }
+                //dispatch's closing brases
             }else {
                 NSLog(@"error: %@", error.description);
-           }
-                    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-                }];
-
+            }
+            [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+        }];
+        
     }
+}
+
+- (void)fetchMyPlaylist
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    
+    
+    //dispatch_async(dispatch_get_main_queue(), ^{
+        [self fetchEntries];
+    //});
     
 }
     

@@ -17,6 +17,8 @@
 		DD12A6F2183DC8B100B4B8D5 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD12A6EA183DC8B100B4B8D5 /* UIViewController+ECSlidingViewController.m */; };
 		DD12A6F3183DC8B100B4B8D5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DD12A6EB183DC8B100B4B8D5 /* LICENSE */; };
 		DD12A6F4183DC8B100B4B8D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DD12A6EC183DC8B100B4B8D5 /* README.md */; };
+		DD17B388198DF304004441FD /* ChannelEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B387198DF304004441FD /* ChannelEntry.m */; };
+		DD17B38A198DF57B004441FD /* TopPlayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B389198DF57A004441FD /* TopPlayTableViewController.m */; };
 		DD4EBA4F180B763B00FED418 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4EBA4E180B763B00FED418 /* Foundation.framework */; };
 		DD4EBA51180B763B00FED418 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4EBA50180B763B00FED418 /* CoreGraphics.framework */; };
 		DD4EBA53180B763B00FED418 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4EBA52180B763B00FED418 /* UIKit.framework */; };
@@ -30,7 +32,6 @@
 		DD4EBA70180B763B00FED418 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4EBA52180B763B00FED418 /* UIKit.framework */; };
 		DD4EBA78180B763B00FED418 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD4EBA76180B763B00FED418 /* InfoPlist.strings */; };
 		DD4EBA7A180B763B00FED418 /* TopPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA79180B763B00FED418 /* TopPlayTests.m */; };
-		DD4EBA8B180B789400FED418 /* TopPlayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */; };
 		DD4EBA8C180B789400FED418 /* TopPlayTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */; };
 		DD540296186C9D7400FFD3A7 /* TopPlayVideoFetch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */; };
 		DD54029C187BCFAC00FFD3A7 /* SportsChannelList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD54029B187BCFAC00FFD3A7 /* SportsChannelList.plist */; };
@@ -237,6 +238,9 @@
 		DD12A6EA183DC8B100B4B8D5 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
 		DD12A6EB183DC8B100B4B8D5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DD12A6EC183DC8B100B4B8D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		DD17B386198DF304004441FD /* ChannelEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelEntry.h; sourceTree = "<group>"; };
+		DD17B387198DF304004441FD /* ChannelEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelEntry.m; sourceTree = "<group>"; };
+		DD17B389198DF57A004441FD /* TopPlayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayTableViewController.m; sourceTree = "<group>"; };
 		DD4EBA4B180B763B00FED418 /* TopPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4EBA4E180B763B00FED418 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD4EBA50180B763B00FED418 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -255,7 +259,6 @@
 		DD4EBA77180B763B00FED418 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD4EBA79180B763B00FED418 /* TopPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TopPlayTests.m; sourceTree = "<group>"; };
 		DD4EBA88180B789400FED418 /* TopPlayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayTableViewController.h; sourceTree = SOURCE_ROOT; };
-		DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayTableViewController.m; sourceTree = SOURCE_ROOT; };
 		DD4EBA8A180B789400FED418 /* TopPlayTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopPlayTableViewController.xib; sourceTree = "<group>"; };
 		DD540294186C9D7400FFD3A7 /* TopPlayVideoFetch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayVideoFetch.h; sourceTree = "<group>"; };
 		DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopPlayVideoFetch.m; sourceTree = "<group>"; };
@@ -674,6 +677,8 @@
 		DD4EBA54180B763B00FED418 /* TopPlay */ = {
 			isa = PBXGroup;
 			children = (
+				DD17B386198DF304004441FD /* ChannelEntry.h */,
+				DD17B387198DF304004441FD /* ChannelEntry.m */,
 				DD8DAB11185F710700E25A81 /* UIKit+AFNetworking */,
 				DD8DAAF1185F70BD00E25A81 /* AFNetworking */,
 				DD12A6DB183DC84000B4B8D5 /* SlidingViewController */,
@@ -690,8 +695,8 @@
 				DD0D7ADF184BE07E0054A562 /* TopPlaySlidingViewController.m */,
 				DD8B7E23184FE89900CBD650 /* TopPlaySportsViewController.h */,
 				DD8B7E24184FE89900CBD650 /* TopPlaySportsViewController.m */,
-				DD4EBA89180B789400FED418 /* TopPlayTableViewController.m */,
 				DD4EBA88180B789400FED418 /* TopPlayTableViewController.h */,
+				DD17B389198DF57A004441FD /* TopPlayTableViewController.m */,
 				DD540294186C9D7400FFD3A7 /* TopPlayVideoFetch.h */,
 				DD540295186C9D7400FFD3A7 /* TopPlayVideoFetch.m */,
 				DD4EBA5E180B763B00FED418 /* TopPlayAppDelegate.m */,
@@ -1258,6 +1263,7 @@
 				DDAF6502181A2D0700E238A9 /* GTLYouTubeVideoMonetizationDetails.m in Sources */,
 				DDAF64DE181A2D0700E238A9 /* GTLYouTubePlaylistItemSnippet.m in Sources */,
 				DDAF64DB181A2D0700E238A9 /* GTLYouTubePlaylistItem.m in Sources */,
+				DD17B38A198DF57B004441FD /* TopPlayTableViewController.m in Sources */,
 				DD12A6F1183DC8B100B4B8D5 /* ECSlidingViewController.m in Sources */,
 				DDAF64E0181A2D0700E238A9 /* GTLYouTubePlaylistListResponse.m in Sources */,
 				DDAF64DF181A2D0700E238A9 /* GTLYouTubePlaylistItemStatus.m in Sources */,
@@ -1291,6 +1297,7 @@
 				DD12A6EE183DC8B100B4B8D5 /* ECSlidingAnimationController.m in Sources */,
 				DD8DAB27185F710700E25A81 /* UIWebView+AFNetworking.m in Sources */,
 				DDAF64CB181A2D0700E238A9 /* GTLYouTubeLiveBroadcast.m in Sources */,
+				DD17B388198DF304004441FD /* ChannelEntry.m in Sources */,
 				DDAF64B3181A2D0700E238A9 /* GTLYouTubeChannelAuditDetails.m in Sources */,
 				DDAF64A9181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsPlaylistItem.m in Sources */,
 				DD12A6F0183DC8B100B4B8D5 /* ECSlidingSegue.m in Sources */,
@@ -1350,7 +1357,6 @@
 				DDAF64A8181A2D0700E238A9 /* GTLYouTubeActivityContentDetailsLike.m in Sources */,
 				DDAF64E3181A2D0700E238A9 /* GTLYouTubePlaylistStatus.m in Sources */,
 				DDAF64E7181A2D0700E238A9 /* GTLYouTubeResourceId.m in Sources */,
-				DD4EBA8B180B789400FED418 /* TopPlayTableViewController.m in Sources */,
 				DDAF64D0181A2D0700E238A9 /* GTLYouTubeLiveStream.m in Sources */,
 				DDAF64BC181A2D0700E238A9 /* GTLYouTubeChannelStatistics.m in Sources */,
 				DDAF64DA181A2D0700E238A9 /* GTLYouTubePlaylistContentDetails.m in Sources */,

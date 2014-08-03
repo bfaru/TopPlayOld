@@ -29,19 +29,22 @@
     //[self.videoPhoto cancelImageRequestOperation];
     NSDictionary *imageDic = dictionary[@"thumbnails"];
     NSURL *url = [NSURL URLWithString:imageDic[@"standard"][@"url"]];
-   
+    NSLog(@"IMAGE NAME: %@", url);
+    if (url) {
+        [self.videoPhoto setImageWithURL:url];
+        
+    }
+
    // NSData *data = [NSData dataWithContentsOfURL:url];
     //self.videoPhoto.image = [UIImage imageWithData:data ];
     self.videoTitle.text = dictionary[@"title"];
     self.channelTitle.text = dictionary[@"channelTitle"];
-    if (url) {
-        [self.videoPhoto setImageWithURL:url];
-
-    }
+    
     
 }
 
 -(void)prepareForReuse {
+    [super prepareForReuse];
     [self.videoPhoto cancelImageRequestOperation];
     self.videoPhoto.image = nil;
     
