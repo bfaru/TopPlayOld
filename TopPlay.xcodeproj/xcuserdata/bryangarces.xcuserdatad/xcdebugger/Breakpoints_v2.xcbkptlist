@@ -972,7 +972,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TopPlay/TopPlayTableViewController.m"
-            timestampString = "428743587.400968"
+            timestampString = "428818888.076731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "365"
+            endingLineNumber = "365"
+            landmarkName = "-fetchMyChannelList"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TopPlay/TopPlayTableViewController.m"
+            timestampString = "428818888.076731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "358"
@@ -988,11 +1004,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TopPlay/TopPlayTableViewController.m"
-            timestampString = "428744169.244142"
+            timestampString = "428818888.076731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "353"
-            endingLineNumber = "353"
+            startingLineNumber = "354"
+            endingLineNumber = "354"
             landmarkName = "-fetchMyChannelList"
             landmarkType = "5">
          </BreakpointContent>
@@ -1004,27 +1020,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TopPlay/TopPlayTableViewController.m"
-            timestampString = "428744214.220262"
+            timestampString = "428818888.076731"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "349"
-            endingLineNumber = "349"
-            landmarkName = "-fetchMyChannelList"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TopPlay/TopPlayTableViewController.m"
-            timestampString = "428744358.134322"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "350"
-            endingLineNumber = "350"
+            startingLineNumber = "355"
+            endingLineNumber = "355"
             landmarkName = "-fetchMyChannelList"
             landmarkType = "5">
          </BreakpointContent>

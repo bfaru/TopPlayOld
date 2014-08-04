@@ -194,8 +194,13 @@
     
    // [self.view addGestureRecognizer:self.slidingViewController.panGesture];
     //[self.navigationController.view addGestureRecognizer:self.slidingViewController.panGesture];
-    
-    self.title = self.navigationController.title;
+    if (self.navigationController.title) {
+        self.title = self.navigationController.title;
+
+    } else {
+        self.title = @"Front";
+
+    }
     
     // configure top view controller
         //Documets directory an file paths
@@ -351,6 +356,8 @@
          if ([channelTitle isEqualToString:self.navigationController.title]) {
              self.playlistId = dic[@"uploadsId"];
              break;
+         } else {
+             self.playlistId = @"UUQsH5XtIc9hONE1BQjucM0g";
          }
      }
                       //      self.playlistId = str;
