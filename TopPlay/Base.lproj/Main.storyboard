@@ -85,13 +85,13 @@
         <scene sceneID="d4p-rb-tfL">
             <objects>
                 <tableViewController id="XzI-W8-jdM" customClass="TopPlayTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="180" sectionHeaderHeight="22" sectionFooterHeight="22" id="yut-2Y-7f3">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="180" sectionHeaderHeight="22" sectionFooterHeight="22" id="yut-2Y-7f3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="180" id="CQs-ZD-JRR" customClass="VideoCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="videoCell" rowHeight="180" id="CQs-ZD-JRR" customClass="VideoCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CQs-ZD-JRR" id="zQn-qH-Nzf">
@@ -128,6 +128,7 @@
                                     <outlet property="channelTitle" destination="yC0-Tm-oUj" id="6gI-cj-1vH"/>
                                     <outlet property="videoPhoto" destination="9ui-yY-H0q" id="Rka-GL-goq"/>
                                     <outlet property="videoTitle" destination="U3Q-jV-6lG" id="sCY-OQ-D2l"/>
+                                    <segue destination="yfN-uh-gmY" kind="push" identifier="weView" id="y9b-xC-R5X"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -153,6 +154,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRA-qU-FBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="632" y="-346"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Mmf-0e-AeP">
+            <objects>
+                <viewController id="yfN-uh-gmY" customClass="TPWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCx-4T-Bjo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Pyz-Oe-mwa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9cp-UT-Ikh"/>
+                    <connections>
+                        <outlet property="webView" destination="Pyz-Oe-mwa" id="VdZ-GL-v4Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8q-TS-exd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="-307"/>
         </scene>
         <!--Top Play Sports View Controller - Root View Controller-->
         <scene sceneID="Vdw-9C-wNF">

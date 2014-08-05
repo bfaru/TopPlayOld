@@ -170,6 +170,7 @@
 		DDAF650D181A2D0700E238A9 /* GTLYouTubeVideoSuggestionsTagSuggestion.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAF649A181A2D0700E238A9 /* GTLYouTubeVideoSuggestionsTagSuggestion.m */; };
 		DDAF650E181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAF649C181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m */; };
 		DDAF650F181A2D0700E238A9 /* GTLYouTubeWatchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAF649E181A2D0700E238A9 /* GTLYouTubeWatchSettings.m */; };
+		DDE38B971991385600C540B2 /* TPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE38B961991385600C540B2 /* TPWebViewController.m */; };
 		DDED6E54182EC5FC00A6FD0C /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDED6E53182EC5FC00A6FD0C /* VideoCell.m */; };
 		DDF4713018407695006D83C3 /* TopPlayMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF4712F18407695006D83C3 /* TopPlayMenuViewController.m */; };
 /* End PBXBuildFile section */
@@ -567,6 +568,8 @@
 		DDAF649C181A2D0700E238A9 /* GTLYouTubeVideoTopicDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLYouTubeVideoTopicDetails.m; path = "../../../../../../../../../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTubeVideoTopicDetails.m"; sourceTree = "<group>"; };
 		DDAF649D181A2D0700E238A9 /* GTLYouTubeWatchSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTLYouTubeWatchSettings.h; path = "../../../../../../../../../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTubeWatchSettings.h"; sourceTree = "<group>"; };
 		DDAF649E181A2D0700E238A9 /* GTLYouTubeWatchSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLYouTubeWatchSettings.m; path = "../../../../../../../../../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTubeWatchSettings.m"; sourceTree = "<group>"; };
+		DDE38B951991385600C540B2 /* TPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPWebViewController.h; sourceTree = "<group>"; };
+		DDE38B961991385600C540B2 /* TPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPWebViewController.m; sourceTree = "<group>"; };
 		DDED6E52182EC5FC00A6FD0C /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
 		DDED6E53182EC5FC00A6FD0C /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		DDF4712E18407695006D83C3 /* TopPlayMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopPlayMenuViewController.h; sourceTree = "<group>"; };
@@ -703,6 +706,8 @@
 				DD4EBA60180B763B00FED418 /* Main.storyboard */,
 				DD4EBA66180B763B00FED418 /* Images.xcassets */,
 				DD4EBA55180B763B00FED418 /* Supporting Files */,
+				DDE38B951991385600C540B2 /* TPWebViewController.h */,
+				DDE38B961991385600C540B2 /* TPWebViewController.m */,
 			);
 			path = TopPlay;
 			sourceTree = "<group>";
@@ -1248,6 +1253,7 @@
 				DDAF64EA181A2D0700E238A9 /* GTLYouTubeSearchResultSnippet.m in Sources */,
 				DDAF64B5181A2D0700E238A9 /* GTLYouTubeChannelBrandingSettings.m in Sources */,
 				DDAF64ED181A2D0700E238A9 /* GTLYouTubeSubscriptionListResponse.m in Sources */,
+				DDE38B971991385600C540B2 /* TPWebViewController.m in Sources */,
 				DDAF650A181A2D0700E238A9 /* GTLYouTubeVideoStatistics.m in Sources */,
 				DD8DAB0D185F70BD00E25A81 /* AFURLSessionManager.m in Sources */,
 				DD8DAB22185F710700E25A81 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
